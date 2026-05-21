@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- SEO Basics -->
+    <title>عروض مخصصة | عبدو أحمد - احصل على عرض يناسب مشروعك</title>
+    <meta name="description" content="طلب عرض سعر مخصص لمشروعك. احصل على تصميم موقع أو نظام POS يناسب احتياجاتك وميزانيتك مع عروض لفترة محدودة.">
+    <meta name="keywords" content="عرض سعر مخصص, تصميم مواقع, نظام POS, عروض محدودة">
+    <meta name="author" content="عبدو أحمد">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="عروض مخصصة | عبدو أحمد">
+    <meta property="og:description" content="احصل على عرض سعر مخصص لمشروعك مع عروض لفترة محدودة">
+    <meta property="og:site_name" content="عبدو أحمد">
+    <meta property="og:locale" content="ar_AR">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ff6a00">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ff6a00'/%3E%3Ctext x='50' y='67' text-anchor='middle' fill='white' font-size='50' font-weight='bold'%3Eع%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <style>
+        /* ========================================
+           CSS Variables
+        ======================================== */
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-card: rgba(30, 30, 30, 0.95);
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --text-muted: #aaaaaa;
+            --border-color: rgba(255, 106, 0, 0.2);
+            --accent-color: #ff6a00;
+            --accent-glow: rgba(255, 106, 0, 0.3);
+            --header-gradient: linear-gradient(135deg, #ff6a00, #000000);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --success-color: #00c853;
+            --warning-color: #ff9800;
+            --danger-color: #ff4444;
+            --offer-bg: linear-gradient(135deg, #ff6a00, #ff0055);
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        .custom-header {
+            background: var(--header-gradient);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 106, 0, 0.15) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        /* Navigation */
+        .custom-nav {
+            background: rgba(0, 0, 0, 0.95);
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .custom-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .custom-nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        .offer-hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--offer-bg), #ff6a00);
+            border-radius: 30px;
+            margin-bottom: 40px;
+        }
+
+        .offer-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .offer-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Limited Offers */
+        .limited-offers {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 60px;
+            height: 3px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .offers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .offer-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+
+        .offer-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .offer-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--danger-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .offer-icon {
+            font-size: 50px;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .offer-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .offer-price {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--accent-color);
+            margin: 15px 0;
+        }
+
+        .offer-price small {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .offer-features {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .offer-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .offer-features li i {
+            color: var(--success-color);
+            width: 20px;
+        }
+
+        .offer-timer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .timer-box {
+            text-align: center;
+        }
+
+        .timer-box span:first-child {
+            font-size: 24px;
+            font-weight: bold;
+            background: var(--accent-color);
+            padding: 5px 10px;
+            border-radius: 8px;
+            display: inline-block;
+            min-width: 50px;
+        }
+
+        .timer-box span:last-child {
+            font-size: 11px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid var(--accent-color);
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: transparent;
+            transform: scale(1.02);
+        }
+
+        /* Custom Order Form */
+        .custom-order-form {
+            background: var(--bg-card);
+            border-radius: 24px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group label i {
+            color: var(--accent-color);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .form-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* Why Choose Us */
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 25px;
+            background: var(--bg-card);
+            border-radius: 20px;
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .why-card i {
+            font-size: 45px;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .custom-footer {
+            background: var(--bg-primary);
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            
+            .offer-hero h1 {
+                font-size: 28px;
+            }
+            
+            .timer-box span:first-child {
+                font-size: 18px;
+                min-width: 40px;
+            }
+            
+            .custom-nav a {
+                margin: 0 8px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="custom-header">
+    <div class="header-content">
+        <a href="index.html" class="logo">عبدو <span>أحمد</span></a>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="custom-nav">
+    <a href="index.html">الرئيسية</a>
+    <a href="index.html#services">الخدمات</a>
+    <a href="index.html#pricing">الباقات</a>
+    <a href="#custom-offer">عروض محدودة</a>
+    <a href="#request-form">طلب عرض مخصص</a>
+    <a href="index.html#contact-page">تواصل</a>
+</nav>
+
+<main>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="offer-hero">
+            <h1>🎯 لم تجد الباقة المناسبة؟</h1>
+            <p>احصل على عرض سعر مخصص يناسب احتياجاتك وميزانيتك بالضبط</p>
+        </div>
+
+        <!-- Limited Time Offers -->
+        <section id="custom-offer" class="limited-offers">
+            <h2 class="section-title">🔥 عروض لفترة محدودة</h2>
+            <div class="offers-grid">
+                
+                <!-- Offer 1 -->
+                <div class="offer-card">
+                    <div class="offer-badge">عرض الأسبوع</div>
+                    <div class="offer-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>باقة إطلاق الأعمال</h3>
+                    <div class="offer-price">
+                        <span class="original-price">7,500 ج</span>
+                        4,999 <small>جنيه</small>
+                    </div>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check"></i> موقع تعريفي احترافي</li>
+                        <li><i class="fas fa-check"></i> 5 صفحات داخلية</li>
+                        <li><i class="fas fa-check"></i> استضافة مجانية سنة</li>
+                        <li><i class="fas fa-check"></i> دعم فني 3 أشهر</li>
+                        <li><i class="fas fa-check"></i> تصميم متجاوب مع الموبايل</li>
+                        <li><i class="fas fa-check"></i> تحسين SEO أساسي</li>
+                    </ul>
+                    <div class="offer-timer">
+                        <i class="fas fa-hourglass-half"></i> ينتهي العرض خلال:
+                        <div class="timer" data-days="5">
+                            <div class="timer-box"><span id="days1">00</span><span>يوم</span></div>
+                            <div class="timer-box"><span id="hours1">00</span><span>ساعة</span></div>
+                            <div class="timer-box"><span id="minutes1">00</span><span>دقيقة</span></div>
+                            <div class="timer-box"><span id="seconds1">00</span><span>ثانية</span></div>
+                        </div>
+                    </div>
+                    <a href="#request-form" class="btn" onclick="setOfferValue('باقة إطلاق الأعمال - 4,999 جنيه')">اطلب العرض الآن</a>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card">
+                    <div class="offer-badge">عرض حصري</div>
+                    <div class="offer-icon"><i class="fas fa-store"></i></div>
+                    <h3>باقة المتجر الشامل</h3>
+                    <div class="offer-price">
+                        <span class="original-price">13,000 ج</span>
+                        10,000 <small>جنيه</small>
+                    </div>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check"></i> متجر إلكتروني متكامل</li>
+                        <li><i class="fas fa-check"></i> 100 منتج غير محدود</li>
+                        <li><i class="fas fa-check"></i> بوابة دفع إلكترونية</li>
+                        <li><i class="fas fa-check"></i> شهادة SSL مجانية</li>
+                        <li><i class="fas fa-check"></i> لوحة تحكم احترافية</li>
+                        <li><i class="fas fa-check"></i> دعم فني 6 أشهر</li>
+                    </ul>
+                    <div class="offer-timer">
+                        <i class="fas fa-hourglass-half"></i> ينتهي العرض خلال:
+                        <div class="timer" data-days="10">
+                            <div class="timer-box"><span id="days2">00</span><span>يوم</span></div>
+                            <div class="timer-box"><span id="hours2">00</span><span>ساعة</span></div>
+                            <div class="timer-box"><span id="minutes2">00</span><span>دقيقة</span></div>
+                            <div class="timer-box"><span id="seconds2">00</span><span>ثانية</span></div>
+                        </div>
+                    </div>
+                    <a href="#request-form" class="btn" onclick="setOfferValue('باقة المتجر الشامل - 9,999 جنيه')">اطلب العرض الآن</a>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card">
+                    <div class="offer-badge">عرض VIP</div>
+                    <div class="offer-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>نظام POS متكامل</h3>
+                    <div class="offer-price">
+                        <span class="original-price">12,000 ج</span>
+                        8,999 <small>جنيه</small>
+                    </div>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check"></i> نظام نقاط بيع كامل</li>
+                        <li><i class="fas fa-check"></i> إدارة الطاولات والطلبات</li>
+                        <li><i class="fas fa-check"></i> تقارير يومية وشهرية</li>
+                        <li><i class="fas fa-check"></i> دعم أجهزة الباركود</li>
+                        <li><i class="fas fa-check"></i> طباعة فواتير حرارية</li>
+                        <li><i class="fas fa-check"></i> ضمان لمدة عام</li>
+                    </ul>
+                    <div class="offer-timer">
+                        <i class="fas fa-hourglass-half"></i> ينتهي العرض خلال:
+                        <div class="timer" data-days="7">
+                            <div class="timer-box"><span id="days3">00</span><span>يوم</span></div>
+                            <div class="timer-box"><span id="hours3">00</span><span>ساعة</span></div>
+                            <div class="timer-box"><span id="minutes3">00</span><span>دقيقة</span></div>
+                            <div class="timer-box"><span id="seconds3">00</span><span>ثانية</span></div>
+                        </div>
+                    </div>
+                    <a href="#request-form" class="btn" onclick="setOfferValue('نظام POS متكامل - 8,999 جنيه')">اطلب العرض الآن</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Custom Offer -->
+        <div class="why-choose-grid">
+            <div class="why-card">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>تصميم حسب احتياجك</h3>
+                <p>نصمم موقعك بناءً على متطلباتك الخاصة، وليس قالباً جاهزاً</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>يناسب ميزانيتك</h3>
+                <p>نقدم عروضاً تناسب مختلف الميزانيات مع أفضل قيمة مقابل المال</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-clock"></i>
+                <p style="margin-top: 45px;"></p>
+                <h3>تسليم سريع</h3>
+                <p>نلتزم بالمواعيد المتفق عليها مع أعلى معايير الجودة</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-headset"></i>
+                <h3>دعم مستمر</h3>
+                <p>دعم فني مجاني وصيانة دورية لموقعك</p>
+            </div>
+        </div>
+
+        <!-- Custom Order Form -->
+        <section id="request-form" class="custom-order-form">
+            <h2 style="text-align: center; margin-bottom: 30px;">📝 اطلب عرض سعر مخصص</h2>
+            
+            <form id="customOfferForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> الاسم كاملاً *</label>
+                        <input type="text" id="custName" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> رقم الهاتف *</label>
+                        <input type="tel" id="custPhone" required placeholder="مثال: 01150603363">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                        <input type="email" id="custEmail" placeholder="example@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> نوع المشروع *</label>
+                        <select id="custProjectType" required>
+                            <option value="">اختر نوع المشروع</option>
+                            <option value="متجر إلكتروني">متجر إلكتروني</option>
+                            <option value="نظام كاشير مطاعم">نظام كاشير مطاعم</option>
+                            <option value="موقع تعريفي">موقع تعريفي</option>
+                            <option value="نظام إدارة مدرسي">نظام إدارة مدرسي</option>
+                            <option value="منصة تعليمية">منصة تعليمية</option>
+                            <option value="تطبيق ويب مخصص">تطبيق ويب مخصص</option>
+                            <option value="أخرى">أخرى</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-money-bill"></i> الميزانية المتوقعة *</label>
+                        <select id="custBudget" required>
+                            <option value="">اختر الميزانية المناسبة</option>
+                            <option value="أقل من 5000 جنيه">أقل من 5000 جنيه</option>
+                            <option value="5000 - 10000 جنيه">5000 - 10000 جنيه</option>
+                            <option value="10000 - 15000 جنيه">10000 - 15000 جنيه</option>
+                            <option value="15000 - 25000 جنيه">15000 - 25000 جنيه</option>
+                            <option value="أكثر من 25000 جنيه">أكثر من 25000 جنيه</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> الفترة الزمنية المتوقعة</label>
+                        <select id="custTimeline">
+                            <option value="">اختر الفترة المناسبة</option>
+                            <option value="عاجل - أقل من أسبوع">عاجل - أقل من أسبوع</option>
+                            <option value="أسبوعين">أسبوعين</option>
+                            <option value="شهر">شهر</option>
+                            <option value="أكثر من شهر">أكثر من شهر</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-comment-dots"></i> متطلبات المشروع بالتفصيل *</label>
+                    <textarea id="custMessage" rows="5" placeholder="اكتب هنا متطلباتك وأفكارك... ماذا تريد بالضبط؟ ما هي الصفحات التي تحتاجها؟ أي مميزات تريد إضافتها؟"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-gift"></i> هل لديك عرض محدد تريده؟</label>
+                    <select id="custOffer">
+                        <option value="">اختر عرضاً (اختياري)</option>
+                        <option value="باقة إطلاق الأعمال - 4,999 جنيه">باقة إطلاق الأعمال - 4,999 جنيه</option>
+                        <option value="باقة المتجر الشامل - 9,999 جنيه">باقة المتجر الشامل - 9,999 جنيه</option>
+                        <option value="نظام POS متكامل - 8,999 جنيه">نظام POS متكامل - 8,999 جنيه</option>
+                        <option value="لا أريد عرضاً - أريد عرضاً مخصصاً">لا أريد عرضاً - أريد عرضاً مخصصاً</option>
+                    </select>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> إرسال طلب العرض
+                    </button>
+                    <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20عرض%20سعر%20مخصص%20لمشروعي" target="_blank" class="btn" style="background: #25D366; border-color: #25D366;">
+                        <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+                    </a>
+                </div>
+            </form>
+            
+            <div style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(255,106,0,0.1); border-radius: 15px;">
+                <i class="fas fa-shield-alt" style="font-size: 24px; color: var(--accent-color);"></i>
+                <p style="margin-top: 5px;">نضمن الرد خلال 24 ساعة بعرض سعر مفصل يناسب مشروعك</p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="custom-footer">
+    <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="index.html#services">الخدمات</a>
+        <a href="index.html#pricing">الباقات</a>
+        <a href="#custom-offer">العروض</a>
+        <a href="index.html#contact-page">تواصل</a>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/share/1aT5wHPW2S/" target="_blank" style="margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/201150603363" target="_blank" style="margin: 0 10px;"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>جميع الحقوق محفوظة © 2025 | عبدو أحمد</p>
+</footer>
+
+<script>
+    // Timer function
+    function startTimer(days, elementIds) {
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + days);
+        targetDate.setHours(23, 59, 59, 999);
+
+        function updateTimer() {
+            const now = new Date();
+            const diff = targetDate - now;
+
+            if (diff <= 0) {
+                if (elementIds.days) document.getElementById(elementIds.days).innerText = '00';
+                if (elementIds.hours) document.getElementById(elementIds.hours).innerText = '00';
+                if (elementIds.minutes) document.getElementById(elementIds.minutes).innerText = '00';
+                if (elementIds.seconds) document.getElementById(elementIds.seconds).innerText = '00';
+                return;
+            }
+
+            const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hoursLeft = Math.floor((diff % (86400000)) / (3600000));
+            const minutesLeft = Math.floor((diff % 3600000) / 60000);
+            const secondsLeft = Math.floor((diff % 60000) / 1000);
+
+            if (elementIds.days) document.getElementById(elementIds.days).innerText = String(daysLeft).padStart(2, '0');
+            if (elementIds.hours) document.getElementById(elementIds.hours).innerText = String(hoursLeft).padStart(2, '0');
+            if (elementIds.minutes) document.getElementById(elementIds.minutes).innerText = String(minutesLeft).padStart(2, '0');
+            if (elementIds.seconds) document.getElementById(elementIds.seconds).innerText = String(secondsLeft).padStart(2, '0');
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    }
+
+    // Start timers for offers
+    startTimer(5, { days: 'days1', hours: 'hours1', minutes: 'minutes1', seconds: 'seconds1' });
+    startTimer(10, { days: 'days2', hours: 'hours2', minutes: 'minutes2', seconds: 'seconds2' });
+    startTimer(7, { days: 'days3', hours: 'hours3', minutes: 'minutes3', seconds: 'seconds3' });
+
+    // Set offer value from button
+    function setOfferValue(offerText) {
+        const offerSelect = document.getElementById('custOffer');
+        if (offerSelect) {
+            for (let i = 0; i < offerSelect.options.length; i++) {
+                if (offerSelect.options[i].value === offerText) {
+                    offerSelect.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+        document.getElementById('request-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Form submission
+    document.getElementById('customOfferForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('custName').value;
+        const phone = document.getElementById('custPhone').value;
+        
+        if (!name || !phone) {
+            alert('يرجى إدخال الاسم ورقم الهاتف');
+            return;
+        }
+        
+        const formData = {
+            name: name,
+            phone: phone,
+            email: document.getElementById('custEmail').value || 'غير مدخل',
+            projectType: document.getElementById('custProjectType').value,
+            budget: document.getElementById('custBudget').value,
+            timeline: document.getElementById('custTimeline').value || 'غير محدد',
+            message: document.getElementById('custMessage').value || 'لا توجد تفاصيل',
+            selectedOffer: document.getElementById('custOffer').value || 'لا يوجد',
+            timestamp: new Date().toLocaleString('ar-EG')
+        };
+        
+        const whatsappMessage = `*طلب عرض سعر مخصص من الموقع*
+        
+*الاسم:* ${formData.name}
+*الهاتف:* ${formData.phone}
+*البريد:* ${formData.email}
+
+*نوع المشروع:* ${formData.projectType}
+*الميزانية:* ${formData.budget}
+*الفترة:* ${formData.timeline}
+*العرض المختار:* ${formData.selectedOffer}
+
+*متطلبات المشروع:*
+${formData.message}
+
+*تم الإرسال:* ${formData.timestamp}`;
+        
+        const whatsappUrl = `https://wa.me/201150603363?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappUrl, '_blank');
+        
+        alert('جاري تحويلك إلى واتساب لإكمال طلب العرض...');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- SEO Basics -->
+    <title>عبدو أحمد | مطور ويب محترف - المتاجر الإلكترونية وأنظمة POS</title>
+    <meta name="description" content="تصميم وتطوير المتاجر الإلكترونية وأنظمة إدارة المطاعم ونقاط البيع بأسعار تنافسية. باقات متنوعة لجميع الأنشطة.">
+    <meta name="keywords" content="مطور ويب, متجر الكتروني, نظام كاشير, POS, تصميم مواقع, مطعم, كافيه, عقارات">
+    <meta name="author" content="عبدو أحمد">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="عبدو أحمد | مطور ويب محترف">
+    <meta property="og:description" content="باقات تصميم مواقع تبدأ من 3000 جنيه. نوفر لك موقعاً احترافياً لمشروعك.">
+    <meta property="og:site_name" content="عبدو أحمد">
+    <meta property="og:locale" content="ar_AR">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ff6a00">
+    <meta name="color-scheme" content="dark light">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ff6a00'/%3E%3Ctext x='50' y='67' text-anchor='middle' fill='white' font-size='50' font-weight='bold'%3Eع%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "عبدو أحمد",
+        "url": "https://abdo-ahmed.com",
+        "description": "مطور ويب محترف متخصص في جميع أنواع المواقع",
+        "telephone": "+201150603363",
+        "email": "draculla2o24@gmail.com",
+        "priceRange": "₿3000 - ₿6000",
+        "areaServed": {"@type": "Country", "name": "مصر"},
+        "availableLanguage": ["ar", "en"]
+    }
+    </script>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Quick Contact Bar -->
+<div class="quick-contact-bar">
+    <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20الاستفسار%20عن%20الخدمات" target="_blank" class="quick-contact-btn" aria-label="واتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span>واتساب</span>
+    </a>
+    <a href="tel:01150603363" class="quick-contact-btn" aria-label="اتصال">
+        <i class="fas fa-phone"></i>
+        <span>اتصل الآن</span>
+    </a>
+    <a href="#order-form" class="quick-contact-btn primary" aria-label="طلب خدمة">
+        <i class="fas fa-paper-plane"></i>
+        <span>طلب خدمة</span>
+    </a>
+</div>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" id="themeToggle" aria-label="تغيير الوضع">
+    <i class="fas fa-moon"></i>
+</button>
+
+<!-- Scroll Top Button -->
+<button id="scrollTop" class="scroll-top" aria-label="العودة للأعلى">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Header -->
+<header>
+    <div class="profile-container">
+        <div class="profile-image">
+            <img id="profileImage" 
+                 src="images/profile.jpg" 
+                 alt="عبدو أحمد - مطور ويب محترف"
+                 loading="eager"
+                 width="180"
+                 height="180"
+                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22180%22%3E%3Crect width=%22180%22 height=%22180%22 fill=%22%23ff6a00%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2240%22%3Eع%3C/text%3E%3C/svg%3E'">
+        </div>
+        <h1>عبدو <span>أحمد</span></h1>
+        <p>مطور ويب محترف | متاجر إلكترونية | أنظمة إدارة ذكية</p>
+        <div class="header-cta">
+            <a href="#pricing" class="btn btn-primary">شاهد الباقات</a>
+            <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20استشارة%20مجانية" class="btn btn-outline" target="_blank">استشارة مجانية</a>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav aria-label="القائمة الرئيسية">
+    <a href="#home" data-nav="home">الرئيسية</a>
+    <a href="#why-me" data-nav="why-me">لماذا أنا</a>
+    <a href="#services" data-nav="services">الخدمات</a>
+    <a href="#projects" data-nav="projects">المشاريع</a>
+    <a href="#pricing" data-nav="pricing">الباقات</a>
+    <a href="#faq" data-nav="faq">أسئلة شائعة</a>
+    <a href="#contact-page" data-nav="contact-page">تواصل</a>
+</nav>
+
+<main>
+    <!-- Home Section -->
+    <section id="home">
+        <h2>حلول ويب متكاملة</h2>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <p class="hero-subtitle">أحوّل فكرتك إلى موقع احترافي</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">50+</span>
+                        <span class="hero-stat-label">مشروع</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">98%</span>
+                        <span class="hero-stat-label">رضا</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">30+</span>
+                        <span class="hero-stat-label">عميل</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn btn-primary btn-large">اطلب مشروعك الآن</a>
+                    <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20معرفة%20تفاصيل%20الباقات" target="_blank" class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+                    </a>
+                </div>
+            </div>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>أداء فائق السرعة</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>تصميم متجاوب</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>حماية كاملة</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-headset"></i>
+                    <span>دعم فني 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section id="why-me">
+        <h2>لماذا تختارني لمشروعك؟</h2>
+        <div class="why-me-grid">
+            <div class="why-me-card">
+                <div class="why-me-icon"><i class="fas fa-briefcase"></i></div>
+                <h3>خبرة 5+ سنوات</h3>
+                <p>أكثر من 50 مشروعاً ناجحاً في مجالات متنوعة.</p>
+            </div>
+            <div class="why-me-card">
+                <div class="why-me-icon"><i class="fas fa-clock"></i></div>
+                <h3>تسليم سريع</h3>
+                <p>أسلم المشاريع في وقت قياسي مع جودة عالية.</p>
+            </div>
+            <div class="why-me-card">
+                <div class="why-me-icon"><i class="fas fa-support"></i></div>
+                <h3>دعم مجاني</h3>
+                <p>دعم فني مجاني لمدة شهر بعد التسليم.</p>
+            </div>
+            <div class="why-me-card">
+                <div class="why-me-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>نتائج مضمونة</h3>
+                <p>أضمن لك زيادة في المبيعات وتحسين تجربة المستخدم.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>خدماتي الاحترافية</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>المتجر الإلكتروني</h3>
+                </div>
+                <div class="service-price">تبدأ من 13,000 جنيه</div>
+                <ul class="service-features">
+                    <li>تصميم متجر متكامل</li>
+                    <li>نظام دفع آمن</li>
+                    <li>لوحة تحكم كاملة</li>
+                    <li>شهادة SSL مجانية</li>
+                    <li>إضافة غير محدود للمنتجات</li>
+                </ul>
+                <a href="#order-form" class="btn btn-primary btn-service" onclick="setProjectType('متجر إلكتروني')">اطلب الآن</a>
+            </div>
+
+            <div class="service-card featured">
+                <div class="service-badge">الأكثر طلباً</div>
+                <div class="service-header">
+                    <i class="fas fa-utensils"></i>
+                    <h3>نظام الكاشير (مطاعم)</h3>
+                </div>
+                <div class="service-price">تبدأ من 12,000 جنيه</div>
+                <ul class="service-features">
+                    <li>إدارة الطاولات والطلبات</li>
+                    <li>طباعة فواتير حرارية</li>
+                    <li>نظام نقاط البيع POS</li>
+                    <li>إدارة الموظفين والصلاحيات</li>
+                    <li>تقارير يومية وشهرية</li>
+                </ul>
+                <a href="#order-form" class="btn btn-primary btn-service" onclick="setProjectType('نظام كاشير مطاعم')">اطلب الآن</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>موقع تعريفي أو شركة</h3>
+                </div>
+                <div class="service-price">تبدأ من 5,000 جنيه</div>
+                <ul class="service-features">
+                    <li>تصميم عصري واحترافي</li>
+                    <li>صفحة رئيسية + 4 صفحات داخلية</li>
+                    <li>نموذج تواصل احترافي</li>
+                    <li>تحسين SEO أساسي</li>
+                    <li>تصميم متوافق مع جميع الأجهزة</li>
+                </ul>
+                <a href="#order-form" class="btn btn-primary btn-service" onclick="setProjectType('موقع تعريفي')">اطلب الآن</a>
+            </div>
+        </div>
+        
+        <div class="services-cta">
+            <p>لا تجد الباقة المناسبة؟ احصل على عرض مخصص لمشروعك</p>
+            <a href="custom-offer.html" target="_blank" class="btn btn-outline">اطلب عرضاً مخصصاً</a>
+        </div>
+    </section>
+
+    <!-- Projects with Results -->
+    <section id="projects">
+        <h2>مشاريع حقيقية مع نتائج ملموسة</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-store"></i></div>
+                <h3>متجر أزياء إلكتروني</h3>
+                <div class="project-stats">
+                    <div class="project-stat">
+                        <span class="stat-value">+180%</span>
+                        <span class="stat-label">زيادة في المبيعات</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20مشروعاً%20مشابهاً" target="_blank" class="project-link">اطلب مشروعاً مشابهاً <i class="fas fa-arrow-left"></i></a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-coffee"></i></div>
+                <h3>مقهى ومطعم</h3>
+                <div class="project-stats">
+                    <div class="project-stat">
+                        <span class="stat-value">-60%</span>
+                        <span class="stat-label">وقت معالجة الطلبات</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20نظام%20كاشير" target="_blank" class="project-link">اطلب نظام كاشير <i class="fas fa-arrow-left"></i></a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-chalkboard-user"></i></div>
+                <h3>منصة تعليمية</h3>
+                <div class="project-stats">
+                    <div class="project-stat">
+                        <span class="stat-value">+500%</span>
+                        <span class="stat-label">زيادة في التسجيلات</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20منصة%20تعليمية" target="_blank" class="project-link">اطلب منصة تعليمية <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section - الموقع الجديد -->
+    <section id="pricing">
+        <h2>باقات تصميم المواقع</h2>
+        <p class="section-subtitle">اختر الباقة المناسبة لمشروعك - أسعار تنافسية وجودة احترافية</p>
+        
+        <div class="pricing-grid">
+            <!-- باقة موقع مطعم + منيو + طلب واتساب -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>موقع مطعم</h3>
+                    <div class="pricing-price">
+                        <span class="price">3,500</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع مطعم + منيو + طلب واتساب</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> عرض المنيو الكامل</li>
+                    <li><i class="fas fa-check"></i> طلب أونلاين عبر واتساب</li>
+                    <li><i class="fas fa-check"></i> معرض صور للأكلات</li>
+                    <li><i class="fas fa-check"></i> معلومات المطعم وموقعه</li>
+                    <li><i class="fas fa-check"></i> تصميم متجاوب مع الجوال</li>
+                    <li><i class="fas fa-check"></i> دعم فني شهر مجاني</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع مطعم كامل - 3500 جنيه', '3500')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع كافيه عصري -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-mug-hot"></i></div>
+                    <h3>موقع كافيه عصري</h3>
+                    <div class="pricing-price">
+                        <span class="price">4,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع كافيه مع صور وعروض</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> تصميم عصري وجذاب</li>
+                    <li><i class="fas fa-check"></i> عرض العروض الخاصة</li>
+                    <li><i class="fas fa-check"></i> معرض صور احترافي</li>
+                    <li><i class="fas fa-check"></i> قائمة المشروبات</li>
+                    <li><i class="fas fa-check"></i> نظام حجز طاولات</li>
+                    <li><i class="fas fa-check"></i> ربط مباشر بخرائط Google</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع كافيه عصري - 4000 جنيه', '4000')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع شركة تنظيفات -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-broom"></i></div>
+                    <h3>موقع شركة تنظيفات</h3>
+                    <div class="pricing-price">
+                        <span class="price">3,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع متكامل لخدمات التنظيف</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> عرض الخدمات والأسعار</li>
+                    <li><i class="fas fa-check"></i> طلب خدمة عبر واتساب</li>
+                    <li><i class="fas fa-check"></i> معرض أعمال سابقة</li>
+                    <li><i class="fas fa-check"></i> شهادات العملاء</li>
+                    <li><i class="fas fa-check"></i> نموذج طلب عروض</li>
+                    <li><i class="fas fa-check"></i> سريع وسهل التعديل</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع شركة تنظيفات - 3000 جنيه', '3000')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع مكتب عقارات -->
+            <div class="pricing-card featured">
+                <div class="popular-badge">عرض مميز</div>
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-building"></i></div>
+                    <h3>موقع مكتب عقارات</h3>
+                    <div class="pricing-price">
+                        <span class="price">5,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع عقارات متكامل مع عرض الشقق</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> عرض الشقق والعقارات</li>
+                    <li><i class="fas fa-check"></i> فلتر بحث متقدم</li>
+                    <li><i class="fas fa-check"></i> معرض صور لكل عقار</li>
+                    <li><i class="fas fa-check"></i> طلب معاينة عبر واتساب</li>
+                    <li><i class="fas fa-check"></i> إضافة غير محدود للعقارات</li>
+                    <li><i class="fas fa-check"></i> خريطة تفاعلية</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary btn-large" onclick="setPackageValue('موقع مكتب عقارات - 5000 جنيه', '5000')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع معرض سيارات -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-car"></i></div>
+                    <h3>موقع معرض سيارات</h3>
+                    <div class="pricing-price">
+                        <span class="price">5,500</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع عرض السيارات مع كتالوج كامل</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> كتالوج السيارات كامل</li>
+                    <li><i class="fas fa-check"></i> فلتر حسب الموديل والسعر</li>
+                    <li><i class="fas fa-check"></i> معرض صور وفيديو</li>
+                    <li><i class="fas fa-check"></i> طلب معاينة أو شراء</li>
+                    <li><i class="fas fa-check"></i> نظام إدارة السيارات</li>
+                    <li><i class="fas fa-check"></i> إضافة غير محدود للسيارات</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع معرض سيارات - 5500 جنيه', '5500')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع جيم وكورسات -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>موقع جيم وكورسات</h3>
+                    <div class="pricing-price">
+                        <span class="price">4,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع جيم مع كورسات تدريبية</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> عرض الكورسات والمدربين</li>
+                    <li><i class="fas fa-check"></i> جدول الحصص والمواعيد</li>
+                    <li><i class="fas fa-check"></i> نظام حجز وتسجيل</li>
+                    <li><i class="fas fa-check"></i> معرض الصور والفيديوهات</li>
+                    <li><i class="fas fa-check"></i> شهادات الأعضاء</li>
+                    <li><i class="fas fa-check"></i> ربط بواتساب للاستفسار</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع جيم وكورسات - 4000 جنيه', '4000')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع بروفايل شركة برمجة -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-code"></i></div>
+                    <h3>موقع بروفايل لشركة برمجة</h3>
+                    <div class="pricing-price">
+                        <span class="price">4,500</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع يعرض خدمات ومشاريع شركتك</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> عرض الخدمات التقنية</li>
+                    <li><i class="fas fa-check"></i> معرض المشاريع السابقة</li>
+                    <li><i class="fas fa-check"></i> فريق العمل والشهادات</li>
+                    <li><i class="fas fa-check"></i> نموذج طلب عرض سعر</li>
+                    <li><i class="fas fa-check"></i> مدونة تقنية</li>
+                    <li><i class="fas fa-check"></i> تحسين SEO متقدم</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع شركة برمجة - 4500 جنيه', '4500')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع عيادة دكتور مع حجز واتساب -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-stethoscope"></i></div>
+                    <h3>موقع عيادة دكتور</h3>
+                    <div class="pricing-price">
+                        <span class="price">3,500</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع عيادة مع حجز واتساب</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> تعريف بالطبيب والتخصص</li>
+                    <li><i class="fas fa-check"></i> نظام حجز مواعيد واتساب</li>
+                    <li><i class="fas fa-check"></i> عرض الخدمات الطبية</li>
+                    <li><i class="fas fa-check"></i> آراء المرضى</li>
+                    <li><i class="fas fa-check"></i> موقع العيادة على الخريطة</li>
+                    <li><i class="fas fa-check"></i> مقالات طبية</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع عيادة دكتور - 3500 جنيه', '3500')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع صالون حلاقة أو بيوتي سنتر -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-cut"></i></div>
+                    <h3>موقع صالون / بيوتي سنتر</h3>
+                    <div class="pricing-price">
+                        <span class="price">3,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع جذاب لصالون التجميل</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> عرض الخدمات والأسعار</li>
+                    <li><i class="fas fa-check"></i> معرض صور الأعمال</li>
+                    <li><i class="fas fa-check"></i> نظام حجز واتساب</li>
+                    <li><i class="fas fa-check"></i> التعريف بالكادر</li>
+                    <li><i class="fas fa-check"></i> العروض الخاصة</li>
+                    <li><i class="fas fa-check"></i> تصميم عصري جذاب</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع صالون بيوتي سنتر - 3000 جنيه', '3000')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع محل ملابس مع كتالوج -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-tshirt"></i></div>
+                    <h3>موقع محل ملابس</h3>
+                    <div class="pricing-price">
+                        <span class="price">5,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع مع كتالوج منتجات متكامل</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> كتالوج المنتجات الكامل</li>
+                    <li><i class="fas fa-check"></i> فلتر حسب الأقسام</li>
+                    <li><i class="fas fa-check"></i> معرض صور احترافي</li>
+                    <li><i class="fas fa-check"></i> طلب شراء عبر واتساب</li>
+                    <li><i class="fas fa-check"></i> إضافة غير محدود للمنتجات</li>
+                    <li><i class="fas fa-check"></i> العروض والتخفيضات</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع محل ملابس - 5000 جنيه', '5000')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع تصوير وفوتوغرافي -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-camera"></i></div>
+                    <h3>موقع Portfolio مصور فوتوغرافي</h3>
+                    <div class="pricing-price">
+                        <span class="price">4,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>معرض أعمال احترافي للمصورين</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> معرض صور وفيديو</li>
+                    <li><i class="fas fa-check"></i> ألبومات مصنفة</li>
+                    <li><i class="fas fa-check"></i> السيرة الذاتية</li>
+                    <li><i class="fas fa-check"></i> طلب حجز جلسة تصوير</li>
+                    <li><i class="fas fa-check"></i> آراء العملاء</li>
+                    <li><i class="fas fa-check"></i> تصميم عصري جذاب</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary" onclick="setPackageValue('موقع مصور فوتوغرافي - 4000 جنيه', '4000')">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- باقة موقع شركة سياحة ورحلات -->
+            <div class="pricing-card featured">
+                <div class="popular-badge">عرض خاص</div>
+                <div class="pricing-header">
+                    <div class="plan-icon"><i class="fas fa-plane"></i></div>
+                    <h3>موقع شركة سياحة ورحلات</h3>
+                    <div class="pricing-price">
+                        <span class="price">6,000</span>
+                        <span class="currency">جنيه</span>
+                    </div>
+                    <p>موقع متكامل لشركات السياحة</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> عرض الباقات والرحلات</li>
+                    <li><i class="fas fa-check"></i> نظام حجز وتأكيد</li>
+                    <li><i class="fas fa-check"></i> معرض صور الوجهات</li>
+                    <li><i class="fas fa-check"></i> آراء العملاء السابقين</li>
+                    <li><i class="fas fa-check"></i> مدونة سياحية</li>
+                    <li><i class="fas fa-check"></i> دعم فني 3 أشهر</li>
+                </ul>
+                <div class="pricing-cta">
+                    <a href="#order-form" class="btn btn-primary btn-large" onclick="setPackageValue('موقع شركة سياحة ورحلات - 6000 جنيه', '6000')">اطلب الآن</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="custom-package-cta">
+            <div class="custom-text">
+                <i class="fas fa-crown"></i>
+                <div>
+                    <h4>باقة مخصصة لمشروعك</h4>
+                    <p>لديك متطلبات خاصة؟ احصل على عرض سعر مخصص يناسب احتياجاتك وميزانيتك</p>
+                </div>
+            </div>
+            <a href="custom-offer.html" class="btn btn-outline">اطلب باقة مخصصة</a>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+        <h2>اطلب خدمتك الآن</h2>
+        <div class="form-container">
+            <form id="serviceOrderForm" class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> الاسم كاملاً *</label>
+                        <input type="text" id="fullName" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> رقم الهاتف *</label>
+                        <input type="tel" id="phone" required placeholder="مثال: 01150603363">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                        <input type="email" id="email" placeholder="example@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> نوع المشروع *</label>
+                        <select id="projectType" required>
+                            <option value="">اختر نوع المشروع</option>
+                            <option value="موقع مطعم كامل - 3500 جنيه">موقع مطعم + منيو + طلب واتساب - 3500 ج</option>
+                            <option value="موقع كافيه عصري - 4000 جنيه">موقع كافيه عصري مع صور وعروض - 4000 ج</option>
+                            <option value="موقع شركة تنظيفات - 3000 جنيه">موقع شركة تنظيفات - 3000 ج</option>
+                            <option value="موقع مكتب عقارات - 5000 جنيه">موقع مكتب عقارات وعرض شقق - 5000 ج</option>
+                            <option value="موقع معرض سيارات - 5500 جنيه">موقع معرض سيارات - 5500 ج</option>
+                            <option value="موقع جيم وكورسات - 4000 جنيه">موقع جيم وكورسات تدريب - 4000 ج</option>
+                            <option value="موقع شركة برمجة - 4500 جنيه">موقع بروفايل لشركة برمجة - 4500 ج</option>
+                            <option value="موقع عيادة دكتور - 3500 جنيه">موقع عيادة دكتور مع حجز واتساب - 3500 ج</option>
+                            <option value="موقع صالون بيوتي سنتر - 3000 جنيه">موقع صالون حلاقة أو بيوتي سنتر - 3000 ج</option>
+                            <option value="موقع محل ملابس - 5000 جنيه">موقع محل ملابس مع كتالوج - 5000 ج</option>
+                            <option value="موقع مصور فوتوغرافي - 4000 جنيه">موقع تصوير وفوتوغرافي Portfolio - 4000 ج</option>
+                            <option value="موقع شركة سياحة - 6000 جنيه">موقع شركة سياحة ورحلات - 6000 ج</option>
+                            <option value="متجر إلكتروني">متجر إلكتروني (مخصص)</option>
+                            <option value="نظام كاشير مطاعم">نظام كاشير مطاعم (مخصص)</option>
+                            <option value="موقع تعريفي">موقع تعريفي (مخصص)</option>
+                            <option value="باقة مخصصة">باقة مخصصة - حسب الطلب</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-money-bill"></i> الميزانية المتوقعة *</label>
+                        <select id="budget" required>
+                            <option value="">اختر الميزانية المناسبة</option>
+                            <option value="أقل من 3000 جنيه">أقل من 3000 جنيه</option>
+                            <option value="3000 - 4000 جنيه">3000 - 4000 جنيه</option>
+                            <option value="4000 - 5000 جنيه">4000 - 5000 جنيه</option>
+                            <option value="5000 - 6000 جنيه">5000 - 6000 جنيه</option>
+                            <option value="أكثر من 6000 جنيه">أكثر من 6000 جنيه</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> الفترة الزمنية المتوقعة</label>
+                        <select id="timeline">
+                            <option value="">اختر الفترة المناسبة</option>
+                            <option value="عاجل - أقل من أسبوع">عاجل - أقل من أسبوع</option>
+                            <option value="أسبوعان">أسبوعان</option>
+                            <option value="شهر">شهر</option>
+                            <option value="أكثر من شهر">أكثر من شهر</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-comment"></i> تفاصيل إضافية عن المشروع</label>
+                    <textarea id="message" rows="4" placeholder="اكتب هنا متطلباتك وأفكارك..."></textarea>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> إرسال الطلب
+                    </button>
+                    <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20طلب%20خدمة" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> أرسل عبر واتساب
+                    </a>
+                </div>
+            </form>
+            
+            <div class="form-guarantee">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <strong>ضمان الرد خلال 24 ساعة</strong>
+                    <p>سأتصل بك أو أراسلك خلال يوم عمل كحد أقصى لمناقشة مشروعك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section id="testimonials">
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <i class="fas fa-smile"></i>
+                <span>رضا العملاء</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-clock"></i>
+                <span>تسليم في الموعد</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-shield"></i>
+                <span>ضمان الجودة</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-headset"></i>
+                <span>دعم مستمر</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>أسئلة شائعة</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>كم يستغرق تطوير موقع متكامل؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>المدة تعتمد على نوع المشروع. الموقع التعريفي يستغرق حوالي أسبوعين، المتجر الإلكتروني من 3 إلى 4 أسابيع.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>هل تقدم خدمة ما بعد التسليم؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، أقدم دعماً فنياً مجانياً لمدة شهر بعد التسليم مع ضمان على جودة العمل.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>هل يمكنني إضافة مميزات إضافية للباقة؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>بالتأكيد! يمكنك طلب باقة مخصصة تناسب احتياجاتك بالكامل.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>هل يمكنني رؤية نماذج أعمال سابقة؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>بالتأكيد! يمكنني تزويدك بنماذج أعمال سابقة حسب نوع المشروع.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-cta">
+            <p>لم تجد إجابة لسؤالك؟</p>
+            <a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20عندي%20سؤال" target="_blank" class="btn btn-outline">اسألني مباشرة</a>
+        </div>
+    </section>
+
+    <!-- Contact Page Section -->
+    <section id="contact-page">
+        <h2>تواصل معي</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info-large">
+                <div class="contact-method">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <strong>واتساب</strong>
+                        <a href="https://wa.me/201150603363">01150603363</a>
+                        <p>أسرع طريقة للتواصل - رد خلال ساعات</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>اتصال هاتفي</strong>
+                        <a href="tel:01150603363">01150603363</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>البريد الإلكتروني</strong>
+                        <a href="mailto:draculla2o24@gmail.com">draculla2o24@gmail.com</a>
+                        <p>سأرد عليك خلال 24 ساعة</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-simple">
+                <h3>أرسل رسالة سريعة</h3>
+                <form id="quickContactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="اسمك" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="رقم هاتفك" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="رسالتك..." rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-info">
+            <h3>عبدو أحمد</h3>
+            <p>مطور ويب محترف | أكثر من 50 مشروعاً ناجحاً</p>
+        </div>
+        <div class="footer-links">
+            <a href="#pricing">الباقات</a>
+            <a href="#faq">أسئلة شائعة</a>
+            <a href="#order-form">طلب خدمة</a>
+            <a href="#contact-page">تواصل</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" target="_blank" aria-label="فيسبوك"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/201150603363" target="_blank" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة © 2025 | عبدو أحمد</p>
+    </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/201150603363?text=مرحباً%20عبدو،%20أريد%20الاستفسار%20عن%20مشروع%20ويب" 
+   class="whatsapp-float" 
+   target="_blank"
+   aria-label="تواصل عبر واتساب">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Main JavaScript -->
+<script src="js/main.js"></script>
+
+<script>
+    // Function to set package value in form
+    function setPackageValue(packageName, price) {
+        const select = document.getElementById('projectType');
+        if (select) {
+            select.value = packageName;
+        }
+        const budgetSelect = document.getElementById('budget');
+        if (budgetSelect && price) {
+            if (price <= 3000) budgetSelect.value = 'أقل من 3000 جنيه';
+            else if (price <= 4000) budgetSelect.value = '3000 - 4000 جنيه';
+            else if (price <= 5000) budgetSelect.value = '4000 - 5000 جنيه';
+            else if (price <= 6000) budgetSelect.value = '5000 - 6000 جنيه';
+            else budgetSelect.value = 'أكثر من 6000 جنيه';
+        }
+        const orderForm = document.getElementById('order-form');
+        if (orderForm) {
+            orderForm.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                const phoneInput = document.getElementById('phone');
+                if (phoneInput) phoneInput.focus();
+            }, 500);
+        }
+    }
+    
+    // Re-define setProjectType for backward compatibility
+    window.setProjectType = function(type) {
+        const select = document.getElementById('projectType');
+        if (select) {
+            select.value = type;
+        }
+        const orderForm = document.getElementById('order-form');
+        if (orderForm) {
+            orderForm.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+</script>
+
+</body>
+</html>
